@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.newer.menu.PopupActivity">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="弹出菜单"
+        android:id="@+id/button_popupMenu"
+        android:layout_alignParentTop="true"
+        android:drawableRight="@drawable/ic_more_vert_grey600_16dp"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:drawablePadding="8dp"
+        android:onClick="onClick"/>
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.ljheee.menu.androidmenu.OptionsActivity">
+
+
+    <!-- id: 标识符 -->
+    <!-- icon: 图标 -->
+    <!-- title: （无图标时）显示的文字 -->
+    <!-- showAsAction: 是否显示在操作栏 -->
+    <!-- visible: 是否可见，默认 true -->
+    <!-- enabled: 是否可用，默认 true-->
+    <!-- orderInCategory: 序号，数值越小越靠前 -->
+    <item
+        android:id="@+id/action_new"
+        android:enabled="true"
+        android:icon="@drawable/ic_action_new"
+        android:orderInCategory="1"
+        app:showAsAction="always"
+        android:title="@string/action_new"
+        android:visible="true" />
+
+    <!-- checkableBehavior: single（单选）、all（多选）、none（不可选） -->
+    <!-- checkable: 是否可选 -->
+    <!-- checked: 是否选中 -->
+    <item
+        android:id="@+id/action_sort"
+        android:icon="@drawable/ic_action_sort_by_size"
+        app:showAsAction="always"
+        android:title="排序">
+
+        <menu>
+            <group
+                android:id="@+id/group_sort"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/action_sort_abc"
+                    android:checked="true"
+                    android:title="字母顺序" />
+                <item
+                    android:id="@+id/action_sort_desc"
+                    android:title="从大到小" />
+                <item
+                    android:id="@+id/action_sort_asc"
+                    android:title="从小到大" />
+                <item
+                    android:id="@+id/action_sort_time"
+                    android:title="最后修改" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/action_hide_sort"
+        app:showAsAction="never"
+        android:title="隐藏排序" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:title="@string/action_settings" />
+
+</menu>

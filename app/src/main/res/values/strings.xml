@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AndroidMenu</string>
+
+
+    <string name="action_settings">设置</string>
+    <string name="action_new">新建</string>
+    <string name="title_activity_options">选项菜单</string>
+    <string name="title_activity_context">上下文菜单</string>
+    <string name="title_activity_popup">弹出式菜单</string>
+    <string name="title_activity_cab">上下文操作栏</string>
+</resources>
